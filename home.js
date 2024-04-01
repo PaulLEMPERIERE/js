@@ -232,41 +232,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       })
     })
 
-    $(".modal-sommaire-link").on("mouseenter", function() {
-      gsap.to(".modal-sommaire-link", {
-        color: "rgba(255, 255, 255, 0.25)",
-        duration: 0.3,
-        ease: "power2.easeOut",
-      })
-      gsap.to(".sommaire-arrow", {
-        opacity: 0.25,
-        duration: 0.3,
-        ease: "power2.easeOut",
-      })
-      gsap.to(this, {
-        color: "#fff",
-        duration: 0.3,
-        ease: "power2.easeOut",
-      })
-      gsap.to($(this).find(".sommaire-arrow"), {
-        opacity: 1,
-        duration: 0.3,
-        ease: "power2.easeOut",
-      })
-    }).on("mouseleave", function() {
-      gsap.to(".modal-sommaire-link", {
-        color: "rgba(255, 255, 255, 1)",
-        duration: 0.3,
-        ease: "power2.easeOut",
-      })
-      gsap.to(".sommaire-arrow", {
-        opacity: 1,
-        duration: 0.3,
-        ease: "power2.easeOut",
-      })
-    })
-  })
-  
   // Dynamicly add click event after finsweet attributes cmsnest loads
   window.fsAttributes = window.fsAttributes || [];
   window.fsAttributes.push([
